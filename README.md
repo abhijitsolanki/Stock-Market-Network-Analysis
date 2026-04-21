@@ -25,9 +25,9 @@ To analyze stock price movements effectively, log returns were computed from clo
 
 The log return is defined as:
 
-[
+$$
 R_t = \log(P_t) - \log(P_{t-1})
-]
+$$
 
 where:
 
@@ -54,9 +54,9 @@ Log returns normalize the data and make it suitable for statistical and network 
 
 The Pearson correlation coefficient between two variables ( X ) and ( Y ) is given by:
 
-[
+$$
 r_{XY} = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2} \cdot \sqrt{\sum (Y_i - \bar{Y})^2}}
-]
+$$
 
 This measures the strength and direction of the linear relationship between two time series.
 
@@ -111,9 +111,9 @@ Centrality measures are used to identify important nodes (stocks) in the network
 
 #### **Mathematical Definition**
 
-[
+$$
 C_D(i) = \frac{deg(i)}{N - 1}
-]
+$$
 
 * ( deg(i) ): number of edges connected to node ( i )
 * ( N ): total number of nodes
@@ -134,9 +134,9 @@ degree_centrality = nx.degree_centrality(G)
 
 #### **Mathematical Definition**
 
-[
+$$
 C_C(i) = \frac{N - 1}{\sum d(i, j)}
-]
+$$
 
 * ( d(i, j) ): shortest path distance
 
@@ -156,9 +156,9 @@ closeness_centrality = nx.closeness_centrality(G)
 
 #### **Mathematical Definition**
 
-[
+$$
 C_B(i) = \sum \frac{\sigma_{st}(i)}{\sigma_{st}}
-]
+$$
 
 * ( \sigma_{st} ): number of shortest paths from ( s ) to ( t )
 * ( \sigma_{st}(i) ): paths passing through node ( i )
@@ -179,15 +179,15 @@ betweenness_centrality = nx.betweenness_centrality(G)
 
 #### **Mathematical Definition**
 
-[
+$$
 Ax = \lambda x
-]
+$$
 
 or
 
-[
+$$
 C_E(i) = \frac{1}{\lambda} \sum A_{ij} C_E(j)
-]
+$$
 
 #### **Interpretation**
 
